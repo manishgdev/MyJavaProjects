@@ -1,0 +1,15 @@
+- To get help on Cucumber Commands
+java -cp ".:./lib/*" cucumber.api.cli.Main -h
+
+- To generate the code snippet for the Feature File with CamelCase methods, by default it is with underscore [snake-case] 
+java -cp ".:./lib/*" cucumber.api.cli.Main --snippets camelcase feature
+
+- Compile the classes in package
+javac -cp ".:./lib/*" $(find -name *.java)
+
+- To Execute the Step Definitions classes for the Feature Files
+  java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature
+  -g : Step Definition folder path (glue path)
+  -p : cucumber output format
+
+
