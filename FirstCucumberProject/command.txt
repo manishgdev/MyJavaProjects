@@ -12,4 +12,4 @@ javac -cp ".:./lib/*" $(find -name *.java)
   -g : Step Definition folder path (glue path)
   -p : cucumber output format
 
-
+Other Examples are present in the cucumber executable file in the comments above java executable command
