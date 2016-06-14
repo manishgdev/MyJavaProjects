@@ -6,6 +6,7 @@ import java.util.Map;
 import org.junit.*;
 import cucumber.api.DataTable;
 import java.util.List;
+import java.util.ArrayList;
 
 public class TicTacToe {
 
@@ -13,19 +14,24 @@ public class TicTacToe {
     
     @Given("^a board like this :$")
     public void a_board_like_this(DataTable emptyTable) throws Throwable {
-        board = emptyTable.raw(); 
+        // board = emptyTable.raw(); 
         /* 
          * Above statement creates an uneditable DataTable
          * Editing which will give 
          * java.lang.UnsupportedOperationException
 	     * at java.util.Collections$UnmodifiableList.set(Collections.java:1311)
          */
+         board = new ArrayList<List<String>>();
+         for(List<String> row : emptyTable.raw()) {
+			 board.add(new ArrayList<String>(row));
+		 }
     }
 
     @When("^player x plays in row (\\d+), column (\\d+)$")
     public void player_x_plays_in_row_column(int row, int col) throws Throwable {
-        System.out.println(board.toString());
+        System.out.println("Board Before updating : "+board.toString());
         board.get(row).set(col,"x");
+        System.out.println("Board After updating : "+board.toString());
     }
 
     @Then("^the board should look like this:$")
