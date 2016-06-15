@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="16" started-at="2016-05-31T06:18:15Z" finished-at="2016-05-31T06:18:15Z">
+    <groups>
+    </groups>
+    <test name="Nopackage" duration-ms="16" started-at="2016-05-31T06:18:15Z" finished-at="2016-05-31T06:18:15Z">
+      <class name="com.manish.tngfactory.TestFactoryExec">
+        <test-method status="PASS" signature="execTest()[pri:0, instance:com.manish.tngfactory.TestFactoryExec@24273305]" name="execTest" duration-ms="6" started-at="2016-05-31T11:48:15Z" finished-at="2016-05-31T11:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execTest -->
+        <test-method status="PASS" signature="execTest()[pri:0, instance:com.manish.tngfactory.TestFactoryExec@27082746]" name="execTest" duration-ms="0" started-at="2016-05-31T11:48:15Z" finished-at="2016-05-31T11:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execTest -->
+        <test-method status="PASS" signature="execTest()[pri:0, instance:com.manish.tngfactory.TestFactoryExec@5b1d2887]" name="execTest" duration-ms="1" started-at="2016-05-31T11:48:15Z" finished-at="2016-05-31T11:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execTest -->
+        <test-method status="PASS" signature="execTest()[pri:0, instance:com.manish.tngfactory.TestFactoryExec@42f30e0a]" name="execTest" duration-ms="0" started-at="2016-05-31T11:48:15Z" finished-at="2016-05-31T11:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execTest -->
+        <test-method status="PASS" signature="execTest()[pri:0, instance:com.manish.tngfactory.TestFactoryExec@7bfcd12c]" name="execTest" duration-ms="1" started-at="2016-05-31T11:48:15Z" finished-at="2016-05-31T11:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execTest -->
+        <test-method status="PASS" signature="execTest()[pri:0, instance:com.manish.tngfactory.TestFactoryExec@66133adc]" name="execTest" duration-ms="0" started-at="2016-05-31T11:48:15Z" finished-at="2016-05-31T11:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execTest -->
+      </class> <!-- com.manish.tngfactory.TestFactoryExec -->
+    </test> <!-- Nopackage -->
+  </suite> <!-- Suite1 -->
+</testng-results>

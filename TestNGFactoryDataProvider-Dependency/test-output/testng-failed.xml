@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="none">
+  <test name="Nopackage(failed)" parallel="none">
+    <classes>
+      <class name="com.manish.tngfactory.TestNGFactory">
+        <methods>
+          <include name="testMethod"/>
+          <include name="testMethod"/>
+        </methods>
+      </class> <!-- com.manish.tngfactory.TestNGFactory -->
+    </classes>
+  </test> <!-- Nopackage(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
