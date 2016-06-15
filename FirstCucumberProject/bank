@@ -1,0 +1,4 @@
+rm ./demo/*.class
+javac -cp ".:./lib/*" $(find -name *.java)
+
+java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature/bank.feature

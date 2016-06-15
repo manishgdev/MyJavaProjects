@@ -1,4 +1,4 @@
-package demo;
+package support;
 
 public class Team {
     

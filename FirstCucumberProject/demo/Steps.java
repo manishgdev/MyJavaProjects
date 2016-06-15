@@ -4,6 +4,7 @@ import cucumber.api.java.en.*;
 import cucumber.api.PendingException;
 import java.util.Map;
 import org.junit.*;
+import support.Team;
 
 public class Steps {
     Team team;
