@@ -9,7 +9,7 @@ import support.Money;
 import support.Account;
 
 public class BankFeature {
-    Account myAccount; 
+    Account myAccount;
     
     @Given("^The opening balance of my account is (\\$\\d+\\.\\d+)$")
     public void the_opening_balance_of_my_account_is_$(@Transform(MoneyConverter.class) Money amount) throws Throwable {
