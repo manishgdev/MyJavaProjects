@@ -5,8 +5,8 @@
 2. Create skeleton for the feature file
 3. Run the code with Tags (used in feature/demo.feature)
 4. Use of Datatable in the Feature file and Datatable is not editable (used in Tic-Tac-Toe example)
-- If raw() method of the DataTable is used to put values into a List<List<String>> then the values of the List will not be editable
-- To edit the variable for a DataTable that has to be done in below way :
+	- If raw() method of the DataTable is used to put values into a List<List<String>> then the values of the List will not be editable
+	- To edit the variable for a DataTable that has to be done in below way :
 ```
 List<List<String>> board = new ArrayList<List<String>>();
 for(List<String> row : dataTable.raw()) {
