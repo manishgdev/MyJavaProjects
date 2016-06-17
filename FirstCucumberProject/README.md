@@ -8,22 +8,22 @@
 	- If raw() method of the DataTable is used to put values into a List<List<String>> then the values of the List will not be editable
 	- To edit the variable for a DataTable that has to be done in below way :
 	```
-List<List<String>> board = new ArrayList<List<String>>();
-for(List<String> row : dataTable.raw()) {
-	board.add(new ArrayList<String>(row));
-}
+	List<List<String>> board = new ArrayList<List<String>>();
+	for(List<String> row : dataTable.raw()) {
+		board.add(new ArrayList<String>(row));
+	}
 
 	```
 5. Cucumber DataTable Assertion can be done by below code :
 `expectedTable.diff(board);`
 6. Use of Transformer Class (Used in Bank and Teller Example)
 	```
-public class MoneyConverter extends Transformer<Money> {
+	public class MoneyConverter extends Transformer<Money> {
     
-	public Money transform(String amount) {
-		//Write some code here and return object of Money
- 	}
-}
+		public Money transform(String amount) {
+			//Write some code here and return object of Money
+ 		}
+	}
 	```
 7. Use of Helper class (used in Teller examle - KnowsTheDomain class)
 
