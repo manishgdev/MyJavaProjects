@@ -1,0 +1,19 @@
+rm ./demo/*.class
+javac -cp ".:./lib/*" $(find -name *.java)
+
+# java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature
+
+# java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature/demo.feature
+
+# Start Execution with Line Number 18 in the demo.feature file
+# java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature/demo.feature:18
+
+# to run the feature file with Tag Names write the tag name followed by @ in the feature file
+# and use the tag name in the command with -t switch
+# -t @Score,@Map will run both the Map and the Score tag
+# -t @Score -t @Map will only run the Scenario which is having both the tags
+# @Score @Map
+# Scenario
+java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo -t @Map,@Score feature
+
+
