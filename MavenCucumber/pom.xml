@@ -17,13 +17,13 @@
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>{junit-version}</version>
+			<version>${junit-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>{junit-version}</version>
+			<version>${junit-version}</version>
 			<scope>test</scope>
 		</dependency>
         <!--
