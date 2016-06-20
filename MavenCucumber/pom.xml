@@ -8,29 +8,22 @@
 	<name>MavenCucmber</name>
 	<url>http://maven.apache.org</url>
     
-    <repositories>
-        <repository>
-            <id>sonatype-snapshots</id>
-            <url>https://repo1.maven.org/maven2</url>
-        </repository>
-    </repositories>
-    
 	<properties>
-		<cucumber.version>1.2.4</cucumber.version>
-		<junit.version>1.2.4</junit.version>
+		<cucumber-version>1.2.4</cucumber-version>
+		<junit-version>1.2.4</junit-version>
 	</properties>
 	
 	<dependencies>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.2.4</version>
+			<version>{junit-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>1.2.4</version>
+			<version>{junit-version}</version>
 			<scope>test</scope>
 		</dependency>
         <!--
@@ -41,7 +34,7 @@
             <scope>test</scope>
         </dependency> -->
 	</dependencies>
-	
+    
     <build>
         <plugins>
             <plugin>
