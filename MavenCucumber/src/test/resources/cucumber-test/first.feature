@@ -1,7 +1,7 @@
   Feature: Testing Cucumber Feature Files Execution from Maven
   
-  Scenario: Team Score Maps
-  Given the leader board looks like:
-     | Pirates | 20 |
-     | Sailors | 25 |
+Scenario: New teams should not have scored
+  Given I register a new team "My Team"
+  Then Team Name is "My Team"
+  Then my score is 0
      
