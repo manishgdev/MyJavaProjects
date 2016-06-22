@@ -10,30 +10,35 @@
     
 	<properties>
 		<cucumber-version>1.2.4</cucumber-version>
-		<junit-version>1.2.4</junit-version>
+        <picocontainer-version>2.9</picocontainer-version>
 	</properties>
 	
 	<dependencies>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>${junit-version}</version>
+			<version>${cucumber-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>${junit-version}</version>
+			<version>${cucumber-version}</version>
 			<scope>test</scope>
 		</dependency>
-        <!--
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>${cucumber-version}</version>
+			<scope>test</scope>
+		</dependency>
+        <dependency>
+            <groupId>org.picocontainer</groupId>
+            <artifactId>picocontainer</artifactId>
+            <version>${picocontainer-version}</version>
             <scope>test</scope>
-        </dependency> -->
-	</dependencies>
+        </dependency>
+    </dependencies>
     
     <build>
         <plugins>

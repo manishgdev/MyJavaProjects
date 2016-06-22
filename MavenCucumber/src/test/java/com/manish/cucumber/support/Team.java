@@ -22,4 +22,8 @@ public class Team {
     public String getTeamName() {
         return teamName;
     }
+    
+    public void addScore(int points) {
+        score += points;
+    }
 }
