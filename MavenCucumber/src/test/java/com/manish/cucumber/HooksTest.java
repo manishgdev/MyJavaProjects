@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         
         format = { "pretty", "html:target/cucumber/" },
         snippets = SnippetType.CAMELCASE,
-        features = "classpath:cucumber-test/first.feature"
+        features = "classpath:cucumber-test/hooks.feature"
 )
-public class CucumberTest {
+public class HooksTest {
     
 }

@@ -34,5 +34,12 @@ public class Steps {
         Assert.assertEquals(20,(long)dataMap.get("Pirates"));
     }
 
+	@Given("^Name looks like:$")
+    public void name_looks_like(Map<String, Integer> dataMap) throws Throwable {
+        System.out.println("Team Score for Pirates is : "+dataMap.get("Pirates"));
+        System.out.println("Team Score for Sailors is : "+dataMap.get("Sailors"));
+        Assert.assertEquals(20,(long)dataMap.get("Pirates"));
+    }
+
 
 }

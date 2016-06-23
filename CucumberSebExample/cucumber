@@ -16,4 +16,6 @@ javac -cp ".:./lib/*" $(find -name *.java)
 # Scenario
 java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo -t @Map,@Score feature
 
+#This will show the Maping of Functions to the Step Definitions
+#java -cp ".:./lib/*" cucumber.api.cli.Main --dry-run -p pretty -g demo feature/demo.feature
 
