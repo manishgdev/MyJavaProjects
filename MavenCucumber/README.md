@@ -2,7 +2,7 @@
 
 ####Dependency Injection
 1. Create Constructor of StepDefinition class with the Object of Helper class which is to be used for Dependency Injection
-	```
+	```java
 	public class StepDefn {
 		private HelperClass helper;
 		public StepDefn(HelperClass helperObj) {
@@ -21,7 +21,7 @@
 5. For Excluding a tag **~** can be used 
 6. Complex **OR** and **AND** tagging : Before('@cucumis, @sativus', '@aqua')
 7. Object of Scenario can be used as parameter to the After Method to get information of the Scenario :-<br/>
-	```
+	```java
 	@After
 	public void afterAnnotation(Scenario scenario) {
 		// Method body here
