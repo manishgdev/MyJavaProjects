@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         
-        format = { "pretty", "html:target/cucumber/" },
+        format = "pretty",
         snippets = SnippetType.CAMELCASE,
         features = "classpath:cucumber-test/first.feature"
 )
