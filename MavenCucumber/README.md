@@ -23,7 +23,7 @@
 6. Complex **OR** and **AND** tagging : Before('@cucumis, @sativus', '@aqua')
 7. Object of Scenario can be used as parameter to the After Method to get information of the Scenario :-<br/>
 	```
-	@After
+	@After 
 	public void afterAnnotation(Scenario scenario) {
 		// Method body here
 	}
