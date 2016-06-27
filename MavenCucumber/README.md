@@ -2,14 +2,14 @@
 
 ####Dependency Injection
 1. Create Constructor of StepDefinition class with the Object of Helper class which is to be used for Dependency Injection
-	``
+	```
 	public class StepDefn {
 		private HelperClass helper;
 		public StepDefn(HelperClass helperObj) {
 			helper = helperObj;
 		}
 	}
-	``
+	```
 2. Dependency Injection works with the PicoContainer
 	- **picocontainer** and **cucumber-picocontainer** are to be made available in classpath
 
