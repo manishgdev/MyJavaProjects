@@ -1,0 +1,6 @@
+echo "Removing Old Class Files"
+rm -rf $(find -name *.class)
+echo "Class Files removed"
+javac -cp ".:./lib/*" $(find -name *.java)
+echo "Class Files compiled"
+java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature/delimiter_test.feature
