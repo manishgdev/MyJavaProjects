@@ -2,23 +2,23 @@
 
 
 1. The simplest way to pass a List of String<br/>
-	```Given the following animals: cow, horse, sheep```
-	<br/>
-	To access the above step as List<String> in Step definition class<br/>
-	```
-	@Given("the following animals: (.*)")
-	public void the_following_animals(List<String> animals) {
-	    //Method body Here
-	}
-	```
+    ```Given the following animals: cow, horse, sheep```
+    <br/>
+    To access the above step as List<String> in Step definition class<br/>
+    ```
+    @Given("the following animals: (.*)")
+    public void the_following_animals(List<String> animals) {
+    //Method body Here
+    }
+    ```
 2. Use Delimiter in Conjunction with Transform
-	```
-	public void getListOfBD(@Delimiter(", ") @Transform(LongTransformer.class) List<Long> values) throws Throwable {
-		for(Long l : values) {
-		    System.out.println(l);
-		}
+    ```
+    public void getListOfBD(@Delimiter(", ") @Transform(LongTransformer.class) List<Long> values) throws Throwable {
+        for(Long l : values) {
+	    System.out.println(l);
 	}
-	```
+    }
+    ```
 
 <br/>
 References :-
