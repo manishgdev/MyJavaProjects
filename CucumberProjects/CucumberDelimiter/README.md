@@ -6,19 +6,23 @@
 <br/>
 To access the above step as List<String> in Step definition class<br/>
 	```
+	
 	@Given("the following animals: (.*)")
     	public void the_following_animals(List<String> animals) {
     		//Method body Here
     	}
+    	
     	```
     	
-2. Use Delimiter in Conjunction with Transform
+2. Use Delimiter in Conjunction with Transform <br/>
 	```
+	
 	public void getListOfBD(@Delimiter(", ") @Transform(LongTransformer.class) List<Long> values) throws Throwable {
 		for(Long value : values) {
 			System.out.println(value);
 		}
 	}
+	
 	```
 
 <br/>
