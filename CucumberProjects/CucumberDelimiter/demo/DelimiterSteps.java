@@ -24,4 +24,9 @@ public class DelimiterSteps {
 	public void getListOfBD(@Delimiter(", ") List<Integer> values) throws Throwable {
 		System.out.println("List of Numbers : "+values);
 	}
+	
+	@Given("^I have these Numbers in List (\\d+(?:, \\d+)*)$")
+	public void getListOfBDTransformer(@Transform(NumberTransformer.class) @Delimiter(", ") List<Integer> values) throws Throwable {
+		System.out.println("List of Numbers : "+values);
+	}
 }

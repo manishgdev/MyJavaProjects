@@ -13,3 +13,10 @@ Scenario Outline: test the scenario outline with Delimiter and Transform
     | 5, 7, 9, 10, 1 | 
     | 1, 3, 5, 7, 11 |
 
+
+Scenario Outline: test the scenario outline with Delimiter and Transform
+    Given I have these Numbers in List <values>
+	Examples:
+	| values         |
+    | 5, 7, 9, 10, 1 | 
+    | 1, 3, 5, 7, 11 |
