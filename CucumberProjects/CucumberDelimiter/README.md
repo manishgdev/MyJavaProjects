@@ -9,11 +9,11 @@ To access the above step as List<String> in Step definition class<br/>
 	```
 	
 	@Given("the following animals: (.*)")
-    	public void the_following_animals(List<String> animals) {
-    		//Method body Here
-    	}
-    	
-    	```
+	public void the_following_animals(List<String> animals) {
+		//Method body goes here
+	}
+	```
+
     	
 2. Use Delimiter in Conjunction with Transform <br/>
 
