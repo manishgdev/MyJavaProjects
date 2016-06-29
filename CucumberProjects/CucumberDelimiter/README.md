@@ -15,7 +15,7 @@ To access the above step as List<String> in Step definition class<br/>
 	```
 
     	
-2. Use Delimiter in Conjunction with Transform <br/>
+2. Use Delimiter in Conjunction with Transform (this example was seen in second reference, which is not working and seems to be wrong implementation of Transpose)<br/>
 
 	```
 	
