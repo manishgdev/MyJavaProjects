@@ -1,0 +1,3 @@
+echo "Compiling Classes"
+javac -cp ".:./lib/*" $(find -name "*.java")
+printf "$(find -name "*.java" | wc -l) Java Files Compiled :-\n$(find -name "*.java")\n*********\n"

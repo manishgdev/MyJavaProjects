@@ -1,4 +1,8 @@
-rm ./demo/*.class
-javac -cp ".:./lib/*" $(find -name *.java)
+echo "Removing previously compiled classes"
+rm $(find -name ".class")
+echo "Previously compiled classes removed"
+echo "Compiling Classes"
+javac -cp ".:./lib/*" $(find -name "*.java")
+printf "$(find -name "*.java" | wc -l) Java Files Compiled :-\n$(find -name "*.java")\n*********\n"
 
 java -cp ".:./lib/*" cucumber.api.cli.Main -p pretty -g demo feature/bank.feature
