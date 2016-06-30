@@ -10,3 +10,21 @@
 
 Reference :- <br/>
 [TestNG Parallel Documentation](http://testng.org/doc/documentation-main.html#parallel-running)
+<br/>
+Example :-<br/>
+```
+<suite name="Excel Control File Suite Set"  thread-count="30" configfailurepolicy="continue">
+
+	<test name="Excel Test" parallel="methods">
+		<classes>
+			<class name="com.manish.tngparallel.TestRunner1"> </class>
+		</classes>
+	</test>
+	<test name="Excel Test 1" parallel="methods">
+		<classes>
+			<class name="com.manish.tngparallel.TestRunner2"> </class>
+		</classes>
+	</test>
+</suite>
+
+```
