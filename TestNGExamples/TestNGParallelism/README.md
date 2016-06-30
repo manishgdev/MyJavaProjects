@@ -13,8 +13,8 @@ Reference :- <br/>
 <br/>
 Example :-<br/>
 ```
-<suite name="Excel Control File Suite Set"  thread-count="30" configfailurepolicy="continue">
 
+<suite name="Excel Control File Suite Set"  thread-count="30" configfailurepolicy="continue">
 	<test name="Excel Test" parallel="methods">
 		<classes>
 			<class name="com.manish.tngparallel.TestRunner1"> </class>
@@ -26,5 +26,4 @@ Example :-<br/>
 		</classes>
 	</test>
 </suite>
-
 ```
