@@ -33,3 +33,6 @@
 ```
 To Execute with above configuration 
 ``` mvn exec:java@first-execution ``` or ```mvn exec:java@second-execution```
+
+- If clone() method is not ooverridden then error will come as clone() has protected access in Object
+
