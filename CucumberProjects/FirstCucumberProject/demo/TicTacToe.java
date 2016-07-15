@@ -21,6 +21,8 @@ public class TicTacToe {
          * java.lang.UnsupportedOperationException
 	     * at java.util.Collections$UnmodifiableList.set(Collections.java:1311)
          */
+         System.out.println("Printing Empty Datatable : \n"+emptyTable.toString());
+         System.out.println("Printing Empty Datatable : \n"+emptyTable);
          board = new ArrayList<List<String>>();
          for(List<String> row : emptyTable.raw()) {
 			 board.add(new ArrayList<String>(row));

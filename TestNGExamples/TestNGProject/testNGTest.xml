@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
 <suite name="Suite1" verbose="1" parallel="none" >
-  
-  
 	<test name="Nopackage" >
 		<classes>
 			<class name="TestOutside" />
@@ -13,9 +11,11 @@
 			<package name="com.manish.testNGXML" />
 		</packages>	
 	</test>
-	<!-- <test name="Regression1">
+	
+	<test name="Regression1">
 		<classes>
 			<class name="com.manish.testNGXML.TestExecuteXML"/>
 		</classes> 
-	</test> -->
+	</test> 
+	
 </suite>
