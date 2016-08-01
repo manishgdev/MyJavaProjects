@@ -2,8 +2,9 @@
 
 - This project is based on ExtentReports plugin which is used to create HTML reports for automation tests.<br/>
 URL :- http://extentreports.relevantcodes.com/
-
 <br/>
+References taken from ExtentReports Documentation :- http://extentreports.relevantcodes.com/java/ <br/>
+
 Procedure to create Report :-<br/>
 - Create ```ExtentReports``` object <br/>
 	```ExtentReports extent = new ExtentReports(file-path, replaceExisting);```
@@ -12,6 +13,7 @@ Procedure to create Report :-<br/>
 - Create the Step log using the **log** method in **test** object
 - After the test is completed call the **endTest** method of **extent** object by passing to it the **test** object<br/>
 	```extent.endTest(test);``` 
+
 - Call the **flush** method of extent object to write the logs to the file<br/>
 	```extent.flush();```
 - At the end before closing the test call **close** method to close the output stream created to write the logs
