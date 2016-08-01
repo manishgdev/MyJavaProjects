@@ -4,7 +4,7 @@
 URL :- http://extentreports.relevantcodes.com/
 
 <br/>
-Procedure to create Report :-
+Procedure to create Report :-<br/>
 1. Create ```ExtentReports``` object
 	```ExtentReports extent = new ExtentReports(file-path, replaceExisting);```
 2. Create ```ExtentTest``` object using instance of ExtentReports
