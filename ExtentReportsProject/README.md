@@ -11,7 +11,7 @@ Procedure to create Report :-<br/>
 	```ExtentTest test = extent.startTest("Test Name", "Sample description");```
 - Create the Step log using the **log** method in **test** object
 - After the test is completed call the **endTest** method of **extent** object by passing to it the **test** object<br/>
-	```extent.endTest(test);```
+	```extent.endTest(test);``` 
 - Call the **flush** method of extent object to write the logs to the file<br/>
 	```extent.flush();```
 - At the end before closing the test call **close** method to close the output stream created to write the logs
