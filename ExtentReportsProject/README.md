@@ -5,16 +5,16 @@ URL :- http://extentreports.relevantcodes.com/
 
 <br/>
 Procedure to create Report :-<br/>
-1. Create ```ExtentReports``` object
+- Create ```ExtentReports``` object
 	```ExtentReports extent = new ExtentReports(file-path, replaceExisting);```
-2. Create ```ExtentTest``` object using instance of ExtentReports
+- Create ```ExtentTest``` object using instance of ExtentReports
 	```ExtentTest test = extent.startTest("Test Name", "Sample description");```
-3. Create the Step log using the **log** method in **test** object
-4. After the test is completed call the **endTest** method of **extent** object by passing to it the **test** object
+- Create the Step log using the **log** method in **test** object
+- After the test is completed call the **endTest** method of **extent** object by passing to it the **test** object
 	```extent.endTest(test);```
-5. Call the **flush** method of extent object to write the logs to the file
+- Call the **flush** method of extent object to write the logs to the file
 	```extent.flush();```
-6. At the end before closing the test call **close** method to close the output stream created to write the logs
+- At the end before closing the test call **close** method to close the output stream created to write the logs
 
 <br/>
 Other Capabilities :-
