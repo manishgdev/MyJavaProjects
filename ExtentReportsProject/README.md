@@ -28,10 +28,16 @@ Other Capabilities :-
 
 
 <br/>
-Differences between close and flush::
+Differences between close and flush :-
 
 - If we fail to end any of our tests safely (by calling endTest), close will still show them in the report with a warning sign. 
 - Calling Flush will only write tests to the report once they are ended
 - Close does not write SystemInfo to the report (flush does)
 - We can call flush any number of times for a report session but close only once, because:
 Close closes the underlying stream and destroys the source references so no other Extent commands can be used
+
+<br/> 
+Extent Reports dependencies :-
+- extentreports-2.41.1
+- freemarker-2.3.23
+
