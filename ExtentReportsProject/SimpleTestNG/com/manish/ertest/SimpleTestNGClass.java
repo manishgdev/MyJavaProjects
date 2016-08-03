@@ -25,7 +25,9 @@ public class SimpleTestNGClass {
 		DateFormat df = new SimpleDateFormat("dd-mm-yyyy-hh-mm-ss");
 		String fileName = folderPath + File.separator + "Report-" + df.format(new Date()) + ".html";
 		extent = new ExtentReports(fileName, false);
-		extent.addSystemInfo("Environment", "Prod");
+		extent.addSystemInfo("Environment", "Testing Extent Report");
+		
+		extent.loadConfig(new  File(folderPath + File.separator +".."+ File.separator +"extent-config.xml"));
 	}
 	
 	@BeforeMethod
