@@ -1,5 +1,23 @@
 ##EXTENT REPORTS PROJECT
 
+- Projects
+	- SimpleTestNG 
+		- This contains examples to assign category, author, 
+		- use config file for a simple TestNG class
+	- Multi-Class-TestNG 
+		- This contains examples to create ExtentReport from class extending IReporter listener, 
+		- child tests are put under parent test and custom style is given to the Parent test
+	- TestNG-Parallel
+		- TestNG testcases are executed for parallel="test/classes" 
+		- reports are generated using 
+			- ExtentManager (provides the ExtentReporter object), 
+			- ExtentTestManager (provides the ExtentTest object to write the test logs), 
+			- Base class to have the test listeners, 
+			- all the test classes should entend Base class
+	- TestNG-Parallel-Methods
+		- TestNG testcases are executed for parallel="instance/methods"
+
+
 - This project is based on ExtentReports plugin which is used to create HTML reports for automation tests.<br/>
 URL :- http://extentreports.relevantcodes.com/
 <br/>

@@ -1,4 +1,4 @@
-package com.manish.base;
+package com.manish.beans;
 
 public class Animal {
 	private String name;

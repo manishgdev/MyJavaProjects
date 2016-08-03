@@ -1,4 +1,4 @@
-package com.manish.base;
+package com.manish.beans;
 
 public class Student {
 	private String name;
