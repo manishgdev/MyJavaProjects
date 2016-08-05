@@ -22,7 +22,7 @@ public class SimpleTestNGClass {
 	@BeforeClass
 	public void beforeClass() {
 		String folderPath = System.getProperty("user.dir") + File.separator + "extent-reports";
-		DateFormat df = new SimpleDateFormat("dd-mm-yyyy-hh-mm-ss");
+		DateFormat df = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
 		String fileName = folderPath + File.separator + "Report-" + df.format(new Date()) + ".html";
 		extent = new ExtentReports(fileName, false);
 		extent.addSystemInfo("Environment", "Testing Extent Report");
