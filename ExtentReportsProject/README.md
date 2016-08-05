@@ -1,6 +1,6 @@
 ##EXTENT REPORTS PROJECT
 
-- Projects
+####Projects
 	- SimpleTestNG 
 		- This contains examples to assign category, author, 
 		- use config file for a simple TestNG class
@@ -16,9 +16,9 @@
 			- all the test classes should entend Base class
 	- TestNG-Parallel-Methods
 		- TestNG testcases are executed for parallel="instance/methods"
+		
 
-
-- This project is based on ExtentReports plugin which is used to create HTML reports for automation tests.<br/>
+- These project are based on ExtentReports plugin which is used to create HTML reports for automation tests.<br/>
 URL :- http://extentreports.relevantcodes.com/
 <br/>
 References taken from ExtentReports Documentation :- http://extentreports.relevantcodes.com/java/ <br/>

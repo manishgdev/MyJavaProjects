@@ -12,6 +12,7 @@ public class StudentNameTest extends TestNGBase {
 	@Test
 	public void studentTrueName() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Name of Student to Manish");
 		st.setName("Manish");
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Name of Student");
@@ -22,6 +23,7 @@ public class StudentNameTest extends TestNGBase {
 	@Test
 	public void studentFalseName() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Name of Student to Manish");
 		st.setName("Manish");
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Name of Student");
@@ -32,6 +34,7 @@ public class StudentNameTest extends TestNGBase {
 	@Test
 	public void studentHardFalse() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Name of Student to Manish");
 		st.setName("Manish");
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Name of Student");
@@ -42,6 +45,7 @@ public class StudentNameTest extends TestNGBase {
 	@Test
 	public void studentHardTrue() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Name of Student to Manish");
 		st.setName("Manish");
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Name of Student");

@@ -12,6 +12,7 @@ public class StudentMarksTest extends TestNGBase {
 	@Test
 	public void studentTrueMarks() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Marks of Student to 60");
 		st.setMarks(60);
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Marks of Student");
@@ -22,6 +23,7 @@ public class StudentMarksTest extends TestNGBase {
 	@Test
 	public void studentGraceTrueMarks() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Marks of Student to 60");
 		st.setMarks(60);
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Marks of Student");
@@ -33,6 +35,7 @@ public class StudentMarksTest extends TestNGBase {
 	@Test
 	public void studentFalseMarks() {
 		Student st = new Student();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Marks of Student to 60");
 		st.setMarks(60);
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on Marks of Student");

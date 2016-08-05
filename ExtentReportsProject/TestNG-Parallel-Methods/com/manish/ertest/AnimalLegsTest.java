@@ -12,7 +12,7 @@ public class AnimalLegsTest extends TestNGBase{
 	@Test(groups = {"G1", "G2"})
 	public void animalTrueLegs() {
 		Animal an = new Animal();
-		
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Number of Legs to 4");
 		an.setNumLegs(4);
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on number of Legs");
@@ -23,6 +23,7 @@ public class AnimalLegsTest extends TestNGBase{
 	@Test(groups = {"G2"})
 	public void animalLegsModify() {
 		Animal an = new Animal();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Number of Legs to 4");
 		an.setNumLegs(4);
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on number of Legs");
@@ -33,6 +34,7 @@ public class AnimalLegsTest extends TestNGBase{
 	@Test(groups = {"G2", "G3"})
 	public void animalFalseLegs() {
 		Animal an = new Animal();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Number of Legs to 4");
 		an.setNumLegs(4);
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on number of Legs");

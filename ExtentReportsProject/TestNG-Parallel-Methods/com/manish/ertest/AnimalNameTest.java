@@ -12,7 +12,7 @@ public class AnimalNameTest extends TestNGBase{
 	@Test
 	public void animalTrueName() {
 		Animal an = new Animal();
-		
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Name of Animal to Lion");
 		an.setName("Lion");
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on name of Animal");
@@ -23,6 +23,7 @@ public class AnimalNameTest extends TestNGBase{
 	@Test
 	public void animalNameModify() {
 		Animal an = new Animal();
+		System.out.println("Inside Method :- '"+(Thread.currentThread().getStackTrace()[1].getMethodName())+"' & Thread ID :- " + Thread.currentThread().getId() );
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Set Name of Animal to Lion");
 		an.setName("Lion");
 		ExtentTestManager.getTest().log(LogStatus.INFO, "ThreadId: " + Thread.currentThread().getId(), "Perform Assertion on name of Animal");
