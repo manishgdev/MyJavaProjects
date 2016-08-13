@@ -1,0 +1,9 @@
+printf "\nRemoving Old Class Files"
+rm -rf $(find -name "*.class")
+echo "Old Class Files Removed"
+echo "Compiling Java files"
+javac -cp ".:./lib/*" $(find -name "*.java")
+echo "Java Files compilation complete"
+printf "\n*********Executing Tests***********\n"
+java -cp ".:./lib/*" org.testng.TestNG testNGTest.xml
+printf "\n*********Execution of Java Classes Complete**********\n\n"
