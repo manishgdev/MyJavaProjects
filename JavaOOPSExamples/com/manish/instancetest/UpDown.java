@@ -25,11 +25,15 @@ public class UpDown {
 		else {
 			System.out.println("Downcasting cannot be performed");
 		}
+
+		System.out.println("\na instanceof animal = "+(a instanceof Animal)+"\n");
+
 		System.out.println("After Downcasting");
 		a.printType();
 
 		System.out.println();
 		Dog d = new Dog();
+		System.out.println("\nDog d = new Dog(); d instance of Animal = "+(d instanceof Animal)+"\n");
 		System.out.println("Before Upcasting");
 		d.printType();
 		System.out.println("Perform UpCasting for child to parent Dog d = new Dog()");
