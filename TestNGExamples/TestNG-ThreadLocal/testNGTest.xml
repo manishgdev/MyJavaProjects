@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="Excel Control File Suite Set" thread-count="30" configfailurepolicy="continue">
+
+	<test name="Excel Test" parallel="methods">
+		<classes>
+			<class name="com.manish.tngparallel.ThreadLocalTest"> </class>
+		</classes>
+	</test>
+</suite>
